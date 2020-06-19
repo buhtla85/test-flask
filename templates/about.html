@@ -2,20 +2,10 @@
 
 {% block title %}About{% endblock %}
 
+{% block namespace %}about{% endblock %}
+
 {% block content %}
 
-<main data-barba="container" data-barba-namespace="about">    
-    <header>
-        <nav class="main-navigation">
-        <ul>
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-        </ul>
-        </nav>
-    </header>
-    
-    <h3>ABOUT Page!</h3>
-</main>
-
+<h1>hello from about page!</h1>
 
 {% endblock %}
