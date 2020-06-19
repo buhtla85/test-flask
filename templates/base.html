@@ -3,7 +3,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
-    <!-- don't forget to add link and href for css -->
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" />
 </head>
 <body data-barba="wrapper">
@@ -11,9 +10,23 @@
     <div class="load-container">
         <div class="loading-screen"></div>
     </div>
+
+    <main data-barba="container" data-barba-namespace="{% block namespace %}{% endblock %}">    
+        <header>
+            <nav class="flex-nav">
+                <a href="" class="logo">T-Portfolio</a>
+            <ul class="fullwidth">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            </ul>
+            </nav>
+        </header>
+        
+        {% block content %}{% endblock %}
+    </main>
     
-    {% block content %}{% endblock %}
-   
+    
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
