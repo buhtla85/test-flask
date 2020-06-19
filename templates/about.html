@@ -6,6 +6,23 @@
 
 {% block content %}
 
-<h1>hello from about page!</h1>
+<section class="about">
+    <div class="about-title">
+        <h2>About Me</h2>
+        <div></div>
+    </div>
+    <div class="about-grid">
+        <div class="grid-item">
+            <div class="img-container">
+                <img src="{{ url_for('static', filename='tamara naunovic.jpg') }}" alt="" >
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="p-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ducimus eligendi nulla blanditiis officiis itaque sapiente, iste esse vero accusantium ipsam? Modi itaque accusantium omnis ex voluptatum neque suscipit culpa!</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
