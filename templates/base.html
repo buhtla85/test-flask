@@ -14,7 +14,7 @@
     <main data-barba="container" data-barba-namespace="{% block namespace %}{% endblock %}">    
         <header>
             <nav class="flex-nav">
-                <a href="" class="logo">T-Portfolio</a>
+                <a href="{{ url_for('home') }}" class="logo">T-Portfolio</a>
             <ul class="fullwidth">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
