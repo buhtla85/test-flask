@@ -2,21 +2,10 @@
 
 {% block title %}Home{% endblock %}
 
+{% block namespace %}home{% endblock %}
+
 {% block content %}
 
-<main data-barba="container" data-barba-namespace="home">    
-    <header>
-        <nav class="main-navigation">
-        <ul>
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-        </ul>
-        </nav>
-    </header>
-    
-    <h3>Home Page!</h3>
-</main>
-
-
+<h1>Hello from home page!</h1>
 
 {% endblock %}
