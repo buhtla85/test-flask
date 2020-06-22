@@ -21,6 +21,24 @@ body {
   padding: 0 2rem;
 }
 
+.title {
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #450057;
+  padding-top: 1.5rem;
+}
+
+.title div {
+  width: 5rem;
+  height: 5px;
+  margin: 0 auto;
+  background: rgb(38, 218, 164);
+}
+
 a {
   color: #ffffff;
   position: relative;
@@ -198,24 +216,6 @@ a.cta:hover{
 
 /* ABOUT PAGE */
 
-.about-title {
-  text-align: center;
-}
-
-.about-title h2 {
-  font-size: 1.8rem;
-  text-transform: capitalize;
-  color: #450057;
-  padding-top: 1.5rem;
-}
-
-.about-title div {
-  width: 5rem;
-  height: 5px;
-  margin: 0 auto;
-  background: rgb(38, 218, 164);
-}
-
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -267,3 +267,6 @@ a.cta:hover{
     font-size: 1em;
   }
 }
+
+/* PROJECTS PAGE */
+
