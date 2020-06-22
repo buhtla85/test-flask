@@ -15,6 +15,12 @@ body {
   background-size: cover;
 }
 
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
 a {
   color: #ffffff;
   position: relative;
@@ -136,35 +142,35 @@ nav.flex-nav > a {
 }
 
 /* HOME PAGE */
-.home {
-  background: #450057;
-  opacity: 0.6;
-  margin: 4em auto;
-  padding: 5em;
-  color: #fff;
-  width: 70%;
-  min-height: 800px;
+
+#home h1 {
+  font-size: 3rem;
+  color: #450057;
+  margin-top: 2em;
 }
 
-.home h1 {
-  font-size: 3em;
-}
-
-.home p {
-  font-size: 1.1em;
+#home p {
+  font-size: 1.1rem;
   line-height: 1.6em;
+  margin-top: 2em;
+  color: #450057;
 }
 
 a.cta {
   display: inline-block;
   padding: 1em;
-  background: rgb(242, 255, 196);
+  background: #450057;
   border-radius: 4px;
-  color: #450057;
+  color: #ffffff;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 2em;
   font-size: 1.3em;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+a.cta:hover{
+  opacity: 0.7;
 }
 
 @keyframes fadeAnimation {
@@ -179,9 +185,15 @@ a.cta {
   }
 }
 
-.home div {
+#home div {
   animation: fadeAnimation 1s forwards ease;
   /* animation-delay: 2.5s; */
+}
+
+@media screen and (max-width: 760px) {
+  #home h1 {
+    font-size: 2.3rem;
+  }
 }
 
 /* ABOUT PAGE */
@@ -206,19 +218,52 @@ a.cta {
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 4em;
+}
+
+.p-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #450057;
 }
 
 .img-container {
   display: flex;
-  padding: 15px 12px;
-  box-sizing: border-box;
-  width: 400px; height: 200px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .img-container img {
-  margin: auto;
-  max-width: 100%;
-  max-height: 100%;
+  width: 280px; 
+  height: 280px;
+  border-radius: 50%;
+  border: #450057 10px solid;
+}
+
+@media screen and (max-width: 840px) {
+  .p-container {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    row-gap: 1.6em;
+    margin-top: 3em;
+  }
+
+  .img-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .p-container {
+    font-size: 1em;
+  }
 }
