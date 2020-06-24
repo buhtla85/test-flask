@@ -12,8 +12,17 @@
         <div></div>
     </div>
     <div class="projects-grid">
-        <div class="card">
-            <div class="bg-img"></div>
+
+
+        {% from "card.html" import card with context %}
+
+        {{ card('img1', 'Pet hotel', 'A small Typescript based React app, imitating real life website...', 'https://github.com/buhtla85/first-NEW') }}
+        {{ card('img2', 'Find a pet', 'A small Typescript based React app, fetching data from Petfinder API...', 'https://github.com/buhtla85/third') }}
+        {{ card('img3', 'Weather App', 'A small Typescript based React app, fetching data from OpenWeatherMap API...', 'https://github.com/buhtla85/second') }}
+        {{ card('img4', 'Take a photo', 'A small Typescript based React app with Express server and MongoDB database...', 'https://github.com/buhtla85/react_webcam_app') }}
+        {{ card('img5', 'jQuery image slider', 'Project implementing jQuery image slider and text animations...', 'https://github.com/buhtla85/jQueryPractice') }}
+        <!-- <div class="card">
+            <div class="bg-img" id="img1"></div>
             <div class="content">
                 <h4>Title</h4>
                 <p>Content....</p>
@@ -59,7 +68,7 @@
                 <p>Content....</p>
                 <button>Github</button>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 
