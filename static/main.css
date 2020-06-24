@@ -286,17 +286,36 @@ a.cta:hover{
   background-size: cover;
   min-height: 180px;
   background-position: center;
-  background-color: #ccc;
 }
 
 .content {
   padding: 15px;
 }
 
-button {
-  background-color: transparent;
-  border: 1px solid #2196F3;
+button.github-link {
+  background-color: #2196F3;
   padding: .5rem 1rem;
   cursor: pointer;
   border-radius: .25rem;
+  color: #ffffff;
+}
+
+#img1 {
+  background-image: url("/static/hotel1.png");
+}
+
+#img2 {
+  background-image: url("/static/findpet1.png");
+}
+
+#img3 {
+  background-image: url("/static/weather1.png");
+}
+
+#img4 {
+  background-image: url("/static/webcam1.png");
+}
+
+#img5 {
+  background-image: url("/static/poly-3275592_640.jpg");
 }
