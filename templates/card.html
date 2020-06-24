@@ -1,0 +1,12 @@
+{% macro card(imgID, title, content, link) %} 
+    <div class="card">
+        <div class="bg-img" id="{{imgID}}"></div>
+        <div class="content">
+            <h4>{{title}}</h4>
+            <p>{{content}}</p>
+            <button class="github-link">
+                <a href="{{link}}" target="_blank" >Github</a>
+            </button>
+        </div>
+    </div>
+{% endmacro %}
